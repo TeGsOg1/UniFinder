@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Segoe UI Variable;
+    src: url(/Font/Segoe-UI-Variable-Static-Display.ttf);
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Segoe UI Variable, 'Montserrat', sans-serif !important;
+}
+
+.accordion {
+    margin-top: 90px !important;
+}
+
+.accordion-button {
+    background-image: url(/Image/perro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: aliceblue !important;
+    font-size: 15px !important;
+}
+
+/* Barra de navegacion
+------------------------- */
+
+nav {
+    background-color: rgb(40, 42, 188);
+    height: 60px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+nav li {
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+nav ul li {
+    margin-top: 17px;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: aliceblue
+}
+
+.uf-class {
+    position: fixed;
+    margin-right: auto;
+    padding-left: 10px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#uf-logo {
+    padding-right: 5px;
+    height: 56px;
+    padding-bottom: 9px;
+}
+
+
+.barritas {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    margin-right: 60px;
+    line-height: 64px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/*Esto es el footer
+----------------------------*/
+
+.adapt {
+    min-height: calc(100vh - 0px - 190px);
+}
+
+.footer {
+    display: flex;
+    background-color: rgba(0, 1, 0, 0.8);
+    margin-top: auto;
+    justify-content: center;
+}
+
+.container {
+    padding: 10px;
+}
+
+.footer-row {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    padding: 0 15px;
+    width: 25%;
+}
+
+.footer-links h3{
+    border-bottom: 2px solid rgb(40, 42, 188);
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: rgb(0, 166, 255);
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(0, 166, 255);
+    padding-left: 6px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-logos {
+    font-size: 30px;
+    padding: 0 20px;
+    color: rgb(43, 14, 233);
+}
+
+
+.redes-logos a{
+    color: rgb(13, 134, 255);
+}
+
+.redes-logos a:hover {
+    color: rgb(0, 179, 255);
+    transition: .3s;
+}
+
+#copy {
+    color: aliceblue;
+}
+
+/*De aca en adelante es codigo para hacer la pag responsive
+-----------------------------------------------------------*/
+
+@media (max-width:1031px) {
+
+    nav ul {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:920px) {
+    nav li {
+        margin-right: 10px;
+    }
+
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:790px) {
+    nav li {
+        margin-right: 1px;
+    }
+
+}
+
+@media (max-width:720px) {
+
+    .barritas {
+        display: block;
+    }
+
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(128, 128, 128, .9);
+        top: 59px;
+        left: -100%;
+        transition: .5s;
+        text-align: center;
+        padding-right: 40px;
+    }
+
+    nav ul li {
+        display: block;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+
+    }
+}

@@ -1,0 +1,22 @@
+/* facultades */
+
+.btn-primary{
+    background-color: rgba(240, 248, 255, 0);
+    color: black;
+}
+
+.card-body{
+    background-color: rgba(250, 235, 215, 0);
+    width: 400px;
+    text-align: center;
+    margin-left: 470px;
+}
+
+p{
+    text-align: center;
+}
+
+.fotofacu{
+    width: 700px;
+    margin-top: 90px;
+}

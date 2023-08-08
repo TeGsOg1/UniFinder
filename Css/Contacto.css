@@ -22,7 +22,8 @@
     background-color: aliceblue;
 }
 
-.container {
+.container-cards {
+    margin: auto;
     padding-top: 100px;
     width: 100%;
     display: flex;
@@ -68,7 +69,7 @@
 
 
 @media screen and (max-width:720px){
-    .container{
+    .container-cards{
         flex-wrap: wrap;
     }
 

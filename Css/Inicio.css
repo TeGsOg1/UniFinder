@@ -85,7 +85,13 @@
 }
 
 @media screen and (max-width:520px) {
-    .uf-presentacion {
+    .uf-presentacion h1 {
         padding-top: 50px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .uf-presentacion h1{
+        padding-top: 10px;
     }
 }

@@ -68,6 +68,7 @@ nav a {
 }
 
 .uf-class {
+    margin-top: 5px;
     position: fixed;
     margin-right: auto;
     padding-left: 10px;

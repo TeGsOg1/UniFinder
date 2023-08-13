@@ -1,0 +1,54 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.unis-flex {
+    margin-top: 60px;
+    margin: 0 auto;
+    height: 506px;
+/*     border: 2px solid black;
+ */}
+
+.unis-flex img {
+    width: 100%px;
+}
+
+#unis-flex-izq {
+    margin-top: 60px;
+
+}
+
+#unis-flex-der {
+    margin-top: 60px;
+    flex-grow: calc(1);
+    width: 40%;
+    background: rgb(255, 244, 244);
+}
+
+#unis-flex-der h4 {
+    font-size: 150%;
+    margin: 5px;
+}
+
+#unis-flex-der h2 {
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+#becas {
+    text-decoration: underline rgb(140, 0, 255);
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:550px){
+    .unis-flex img {
+        width: 40px;
+    }
+}

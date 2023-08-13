@@ -5,14 +5,15 @@
 }
 
 .unis-flex {
-    margin-top: 60px;
     margin: 0 auto;
     height: 506px;
-/*     border: 2px solid black;
- */}
+    /*     border: 2px solid black;
+   */
+}
 
 .unis-flex img {
-    width: 100%px;
+    max-width: 100%;
+    height: auto;
 }
 
 #unis-flex-izq {
@@ -47,8 +48,24 @@
 
 /* Responsive */
 
-@media screen and (max-width:550px){
+@media screen and (max-width:929px) {
+    #unis-flex-der {
+        margin-top: 0;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:550px) {
     .unis-flex img {
-        width: 40px;
+        width: 400px;
+    }
+
+    #unis-flex-izq {
+        height: auto;
+    }
+
+    #unis-flex-der h4 {
+        font-size: 110%;
+        margin: 5px;
     }
 }

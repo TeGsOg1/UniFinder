@@ -1,0 +1,25 @@
+body{
+    font-family: 'Montserrat', sans-serif !important;
+    
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text{
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+.text h3 {
+    text-align: center;
+}

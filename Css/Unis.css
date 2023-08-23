@@ -25,7 +25,10 @@
     margin-top: 60px;
     flex-grow: calc(1);
     width: 40%;
-    background: rgb(255, 244, 244);
+    background: aliceblue;
+    height: auto;
+/*     color: #fff;
+ */
 }
 
 #unis-flex-der h4 {
@@ -33,17 +36,53 @@
     margin: 5px;
 }
 
-#unis-flex-der h2 {
-    text-decoration: underline;
-    text-align: center;
-    padding-top: 10px;
+#uni-name {
+    margin: auto;
+    width: 200px;
 }
 
+.priv-pub {
+    display: flex;
+}
 
-#becas {
-    text-decoration: underline rgb(140, 0, 255);
+#priv-pub-img {
+    width: 20px;
+    height: 20px;
+}
+
+#unis-flex-der h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #ccc;
+    background: linear-gradient(to right, rgb(0, 221, 255), rgb(0, 174, 255), rgb(0, 60, 255));
+    font-size: 3rem ;
     text-align: center;
-    margin-top: 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.categ-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.categ {
+    color: #ffff;
+    border-radius: 5px;
+    background: blue;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
+.categ a {
+    font-size: 1.5rem;
+    color: #ffff;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100%;
 }
 
 /* Responsive */
@@ -67,5 +106,9 @@
     #unis-flex-der h4 {
         font-size: 110%;
         margin: 5px;
+    }
+
+    #priv-pub-txt {
+        font-size: 110%;
     }
 }

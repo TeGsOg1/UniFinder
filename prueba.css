@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+}
+
+.categ-container  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.btn {
+    text-align: center;
+    background-color: gray;
+    width: 100px;
+}

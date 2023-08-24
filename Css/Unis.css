@@ -5,6 +5,8 @@
 }
 
 .unis-flex {
+    border: 0.7px solid rgb(31, 30, 30);
+
     margin: 0 auto;
     height: 506px;
     /*     border: 2px solid black;
@@ -69,6 +71,7 @@
 }
 
 .categ {
+    margin-top: 10px;
     color: #ffff;
     border-radius: 5px;
     background: blue;
@@ -85,6 +88,9 @@
     width: 100%;
 }
 
+#uba-img {
+    height: 504px;
+}
 /* Responsive */
 
 @media screen and (max-width:929px) {
@@ -110,5 +116,8 @@
 
     #priv-pub-txt {
         font-size: 110%;
+    }
+    #uba-img {
+        height: auto;
     }
 }

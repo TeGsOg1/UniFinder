@@ -79,14 +79,20 @@
     font-size: 1.7rem;
     color: #fff;
     text-align: center;
-    background-color: rgb(0, 64, 255);
+    background-color: rgb(34, 188, 254);
     width: 300px;
     height: 50px;
     margin-top: 10px;
     border-radius: 5px;
+    transition: all ease .3s;
 }
 
-#uba-img {
+.btn-categ:hover {
+    background-color: rgb(34, 144, 254);
+    transform: scale(1.05);
+}
+
+#uni-img {
     height: 504px;
 }
 /* Responsive */
@@ -115,7 +121,20 @@
     #priv-pub-txt {
         font-size: 110%;
     }
-    #uba-img {
+    #uniñ--img {
         height: auto;
+    }
+    .btn-categ {
+        font-size: 1.4rem;
+        width: 270px;
+        padding-top: 5px;
+    }
+    .btn-categ:hover {
+        background-color: rgb(34, 188, 254);
+        transform: scale(1);
+    }
+    .btn-categ:active {
+        background-color: rgb(34, 144, 254);
+        transform: scale(1.05);
     }
 }

@@ -13,19 +13,27 @@
     margin-top: 150px;
 }
 
-#titulo  {
+#titulo {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #ccc;
     background: linear-gradient(to right, rgb(5, 218, 255), rgb(0, 179, 255), rgb(0, 140, 255));
-    font-size: 4rem ;
+    font-size: 4rem;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    height: 100%;
+
 }
 
 .ns-tit img {
     margin-top: 30px;
     width: 300px;
 
+}
+
+#img-sug {
+    width: 450px;
+    max-width: 100%;
+    height: auto;
 }
 
 .ns-tarjetas {
@@ -45,11 +53,11 @@
     margin: 10px;
     overflow: hidden;
     box-shadow: 0px 1px 10px rgb(0, 0, 0, .2);
-    transition: all .3s ease ;
+    transition: all .3s ease;
 }
 
 .card:hover {
-    box-shadow: 5px 5px 20px rgb(0, 0, 0, .4) ;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, .4);
     transform: translateY(-3%);
 }
 
@@ -77,13 +85,158 @@
     background-color: rgb(0, 140, 255);
 }
 
+.form-container {
+    background-color: rgb(243, 210, 193);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
 
-@media screen and (max-width:720px){
-    .container-cards{
+}
+
+.info-contact {
+    margin: 0 auto;
+}
+
+#cont-text {
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+
+form h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+form {
+
+    background: linear-gradient(to right, rgb(126, 255, 214), rgb(73, 240, 210), rgb(33, 240, 247));
+    margin-top: 30px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    height: auto;
+    width: 500px;
+
+
+}
+
+form input,
+textarea {
+    display: block;
+    resize: none !important;
+}
+
+.txt-inp {
+    font-size: 1.2rem;
+    margin-bottom: 10px !important;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.507);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px;
+
+}
+
+#txt-area {
+    width: 300px !important;
+    height: 200px;
+}
+
+select {
+    font-size: 1.2rem;
+}
+
+.txt-inp::placeholder {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#btn-inp {
+    width: 200px;
+    height: 40px;
+    transition: all ease .3s;
+}
+
+#btn-inp:hover {
+    background-color: rgba(0, 0, 0, 0.63);
+    transform: scale(1.04);
+}
+
+.contact-email {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    margin-top: 30px;
+
+}
+
+.contact-email a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.email {
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.429);
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: all ease .2s;
+}
+
+#email-logo {
+    font-size: 30px;
+}
+
+.email:hover {
+    transform: translateY(-5%);
+}
+
+@media screen and (max-width:930px) {
+    .form-container {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .container-cards {
         flex-wrap: wrap;
     }
 
     .ns-titulo {
         flex-wrap: wrap;
     }
+}
+
+@media screen and (max-width:520px) {
+
+    form {
+        width: 300px !important;
+
+    }
+
+    .txt-inp {
+        width: 100% !important;
+    }
+
+    #txt-area {
+        width: 210px !important;
+        height: 150px;
+        margin: auto;
+    }
+
+    #cont-text {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    #btn-inp {
+        width: 100px !important;
+        margin: auto;
+    }
+
 }

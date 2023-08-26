@@ -46,6 +46,8 @@ nav ul {
     float: right;
     font-size: 20px;
     padding-bottom: 10px;
+    cursor: default;
+
 }
 
 nav li {
@@ -56,6 +58,7 @@ nav li {
 nav ul li {
     margin-top: 17px;
     display: inline-block;
+
 }
 
 nav a {
@@ -109,6 +112,7 @@ nav a {
     background-color: rgba(0, 1, 0, 0.8);
     margin-top: auto;
     justify-content: center;
+    width: 100%;
 }
 
 .container {

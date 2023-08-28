@@ -1,0 +1,70 @@
+#map {
+    width: auto;
+    height: 450px;
+}
+
+.window {
+    background-color: rgb(30, 27, 27);
+    color: aliceblue;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 10px;
+}
+
+.gm-style-iw-d {
+    overflow: hidden !important;
+    background-color: rgb(30, 27, 27) !important;
+}
+
+.poi-info-window.gm-style {
+    background-color: rgb(30, 27, 27) !important;
+}
+
+.gm-style-iw {
+    background-color: rgb(30, 27, 27) !important;
+    opacity: .9;
+}
+
+.address, .phone {
+    display: flex;
+}
+
+.address, .name {
+    margin-bottom: 10px;
+}
+
+.address {
+    margin-top: 10px;
+}
+
+.address i {
+    color: tomato;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.phone i {
+    color: rgb(0, 76, 255);
+    margin-right: 1.4rem;
+    padding-top: 3px;
+    font-size: 1rem;
+
+}
+
+#name {
+    text-align: center;
+}
+
+.gm-ui-hover-effect {
+    color: aliceblue;
+}
+
+.gm-style .transit-container div {
+    background-color: rgb(30, 27, 27) !important;
+    color: aliceblue;
+}
+
+.poi-info-window div, .poi-info-window a {
+    background-color: rgb(30, 27, 27) !important;
+    color: aliceblue;
+}

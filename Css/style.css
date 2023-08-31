@@ -1,3 +1,7 @@
+:root {
+    --color-principal-:rgb(40, 42, 188);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +41,7 @@ body {
 ------------------------- */
 
 nav {
-    background-color: rgb(40, 42, 188);
+    background-color: var(--color-principal-);
     height: 60px;
     width: 100%;
 }
@@ -131,7 +135,7 @@ nav a {
 }
 
 .footer-links h3{
-    border-bottom: 2px solid rgb(40, 42, 188);
+    border-bottom: 2px solid var(--color-principal-);
     font-size: 20px;
     color: aliceblue;
 }

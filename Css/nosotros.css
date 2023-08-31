@@ -86,12 +86,12 @@
 }
 
 .form-container {
-    background-color: rgb(243, 210, 193);
+    background-color: rgb(237, 220, 191);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     height: 650px;
-
+    margin-top: 20px;
 }
 
 .info-contact {
@@ -110,8 +110,7 @@ form h2 {
 }
 
 form {
-
-    background: linear-gradient(to right, rgb(126, 255, 214), rgb(73, 240, 210), rgb(33, 240, 247));
+    background: linear-gradient(to right, rgb(0, 238, 255), rgb(4, 190, 242), rgb(9, 183, 231));
     margin-top: 30px;
     padding: 20px 20px;
     border-radius: 5px;
@@ -137,8 +136,9 @@ textarea {
     border-radius: 5px;
     color: #fff;
     padding: 4px;
-
+    transition: all ease .2s;
 }
+
 
 #txt-area {
     width: 300px !important;

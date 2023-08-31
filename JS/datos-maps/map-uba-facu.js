@@ -28,7 +28,7 @@ const createMarker = (coord, name, address, phone) => {
 };
 
 const createLocationMarkers = () => {
-  Ucalp.forEach((facu) => {
+  Uba.forEach((facu) => {
     let coord = new google.maps.LatLng(facu.lat, facu.lng);
     let name = facu.name;
     let address = facu.address;
@@ -43,16 +43,15 @@ function deleteMarkers() {
 }
 
 function initMap() {
-  let Laplata = { lat: -34.92287836453452, lng:  -57.95908215606883 };
+  let CABA = { lat:-34.6052765, lng:-58.4032344 };
   map = new google.maps.Map(document.getElementById("map"), {
-    center: Laplata,
-    zoom: 15,
+    center: CABA,
+    zoom: 12.8,
     mapId: "553827af7a8d4f3e",
   });
   createLocationMarkers();
 
   infowindow = new google.maps.InfoWindow();
-
   let html = "<h3>Holaaa</h3>";
   
 }

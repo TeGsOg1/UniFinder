@@ -24,18 +24,6 @@ body {
     font-family: Segoe UI Variable, 'Montserrat', sans-serif !important;
 }
 
-.accordion {
-    margin-top: 90px !important;
-}
-
-.accordion-button {
-    background-image: url(/Image/perro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    color: aliceblue !important;
-    font-size: 15px !important;
-}
 
 /* Barra de navegacion
 ------------------------- */

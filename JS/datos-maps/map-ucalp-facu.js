@@ -46,7 +46,7 @@ function initMap() {
   let Laplata = { lat: -34.92287836453452, lng:  -57.95908215606883 };
   map = new google.maps.Map(document.getElementById("map"), {
     center: Laplata,
-    zoom: 15,
+    zoom: 14,
     mapId: "553827af7a8d4f3e",
   });
   createLocationMarkers();

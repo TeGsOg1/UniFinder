@@ -46,7 +46,7 @@ function initMap() {
   let CABA = { lat:-34.6052765, lng:-58.4032344 };
   map = new google.maps.Map(document.getElementById("map"), {
     center: CABA,
-    zoom: 12.8,
+    zoom: 11.5,
     mapId: "553827af7a8d4f3e",
   });
   createLocationMarkers();

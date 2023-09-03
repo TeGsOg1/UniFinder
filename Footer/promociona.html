@@ -28,22 +28,28 @@
 
   <div class="container-pres">
     <div class="ns-tit" id="texto">
-      <h2 id="titulo">Contactános</h2>
+      <h2 id="titulo">Promocioná <br> tú Universidad</h2>
     </div>
     <div class="ns-tit">
       <img src="/Image/contactanos.png" id="img-sug" alt="">
     </div>
     <div class="form-container">
       <div class="info-contact">
-        <h3 id="cont-text"><strong>Hacénos saber lo que <br> nos querés decír</strong></h3>
+        <h3 class="cont-text"><strong>Envíanos los datos basicos <br> tu universidad</strong></h3>
+        <p><h3 id="cont-text-det">Esto permitirá que las personas que <br> están en busca de su "universidad ideal" <br> puedan conocer
+               las distintas opciones a su alcance. <br> <br> Además de poder tener en cuenta otras <br> universidades que no conocían
+        </h3></p>
       </div>
       <div class="info-contact">
         <form action="https://formsubmit.co/uni.finder01@gmail.com" method="POST" class="formulario">
           <h2>Contactános</h2>
-          <input type="text" placeholder="Nombre" name="nombre" class="txt-inp" required>
-          <input type="text" placeholder="Apellido" name="apellido" class="txt-inp" required>
-          <input type="email" name="email" class="txt-inp" placeholder="Correo electrónico" id="">
-          <textarea name="coment" placeholder="Escribí tu mensaje acá" class="txt-inp" id="txt-area" cols="50"
+            <label for="nom y ape">Nombre Completo</label>
+          <input type="text" name="nom y ape" class="txt-inp" required>
+            <label for="Uni-name">Nombre de la Universidad</label>
+          <input type="text" name="Uni-name" class="txt-inp" required>
+            <label for="email-uni">Correo electrónico de la Universidad</label>
+           <input type="email" name="email-uni" class="txt-inp" id="">
+          <textarea name="coment" placeholder="Informacion basica de la universidad (Localidad, cant. de facultades, etc.)" class="txt-inp" id="txt-area" cols="50"
             rows="10" maxlength="320"></textarea>
           <input type="hidden" name="_captcha" value="false">
           <input type="submit" value="Enviar" class="txt-inp" id="btn-inp">

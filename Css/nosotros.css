@@ -22,6 +22,7 @@
     -webkit-background-clip: text;
     height: 100%;
 
+    animation: title-appear 1s ease normal;
 }
 
 .ns-tit img {
@@ -78,6 +79,7 @@
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 1px 10px rgb(0, 0, 0, .2);
+
     transition: all .2s;
 }
 
@@ -90,17 +92,24 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 650px;
+    height: auto;
     margin-top: 20px;
+    padding-bottom: 50px;
 }
 
 .info-contact {
     margin: 0 auto;
 }
 
-#cont-text {
+.cont-text {
     margin-top: 30px;
     font-size: 2.5rem;
+    margin-left: 5px;
+}
+
+#cont-text-det {
+    padding-top: 50px;
+    margin-left: 5px;
 }
 
 form h2 {
@@ -116,8 +125,11 @@ form {
     border-radius: 5px;
     height: auto;
     width: 500px;
+    margin-left: 10px;
+}  
 
-
+label {
+    font-size: 1.5rem;
 }
 
 form input,
@@ -136,6 +148,7 @@ textarea {
     border-radius: 5px;
     color: #fff;
     padding: 4px;
+
     transition: all ease .2s;
 }
 
@@ -195,10 +208,30 @@ select {
     transform: translateY(-5%);
 }
 
+/*------ Keyframes ----*/
+
+@keyframes title-appear {
+    from {
+        transform: translateX(-50%) ;
+        opacity: 0;    
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*----- Responsive ----*/
+
 @media screen and (max-width:930px) {
     .form-container {
         height: auto;
         padding-bottom: 20px;
+    }
+
+    label {
+        font-size: 1rem;
     }
 }
 

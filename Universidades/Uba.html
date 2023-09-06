@@ -1,72 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uba</title>
-    <link rel="icon" href="/Image/LogoUF.png">
-    <link rel="stylesheet" href="/Css/Unis.css">
-    <link rel="stylesheet" href="/Css/bootstrap.css">
-    <link rel="stylesheet" href="/Css/style.css">
-    <link rel="stylesheet" href="/Css/mapas.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uba</title>
+  <link rel="icon" href="/Image/LogoUF.png">
+  <link rel="stylesheet" href="/Css/Unis.css">
+  <link rel="stylesheet" href="/Css/bootstrap.css">
+  <link rel="stylesheet" href="/Css/style.css">
+  <link rel="stylesheet" href="/Css/mapas.css">
 </head>
+
 <body>
-    <nav class="fixed-top">
-        <input type="checkbox" id="check">
-        <label for="check" class="barritas">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <div class="uf-class"><a  href="/index.html"><img id="uf-logo" src="/Image/LogoUF.png" alt="">UniFinder</a></div>
-        <ul>
-          <li class="inicio"><a id="inicio" href="/index.html">Inicio</a></li>
-          <li class="universidades"><a id="Universidades" href="#">Universidades</a></li>
-          <li class="test-voc"><a id="test-voc" href="#">Test vocacional</a></li>
-          <li class="Contacto"><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-  
-    <div class="flex-container">
-      <div class="unis-flex" id="unis-flex-izq">
-          <img src="/Image/argencon_uba.jpg" id="uni-img">
+  <nav class="fixed-top">
+    <input type="checkbox" id="check">
+    <label for="check" class="barritas">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <div class="uf-class"><a href="/index.html"><img id="uf-logo" src="/Image/LogoUF.png" alt="">UniFinder</a></div>
+    <ul>
+      <li class="inicio"><a id="inicio" href="/index.html">Inicio</a></li>
+      <li class="universidades"><a id="Universidades" href="#">Universidades</a></li>
+      <li class="test-voc"><a id="test-voc" href="#">Test vocacional</a></li>
+      <li class="Contacto"><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="flex-container">
+    <div class="unis-flex" id="unis-flex-izq">
+      <img src="/Image/argencon_uba.jpg" id="uni-img">
+    </div>
+    <div class="unis-flex" id="unis-flex-der">
+      <div id="uni-name">
+        <h2>UBA</h2>
       </div>
-      <div class="unis-flex" id="unis-flex-der">
-        <div id="uni-name"><h2>UBA</h2></div>
-          <h4>Enfrentamos grandes desafíos, desde el ámbito educativo y personal, y trabajamos diariamente para adaptarnos a estos nuevos y modernos tiempos que nos toca vivir. <br>
-           En nuestra Universidad, encontrarán un espacio ideal para la formación integral de nuestros alumnos dentro de los valores personales según el modelo cristiano.¡Sean bienvenidos! Y sigamos educando juntos, desde la Universidad Católica de La Plata, a los ciudadanos del mañana.</h4>
-          <h4>Nuestro sistema de becas contempla las situaciones de cada uno, las pasantías que colaboran con la inserción laboral de nuestros alumnos, eldeporte como espacio de encuentro y el intercambio internacional que permiten el contacto con otras culturas, completan una porpuesta accesible, humana y práctica.</h4>
-          <div class="priv-pub">
-            <img src="/Image/Publica.png" id="priv-pub-img"><h5 id="priv-pub-txt">Publica</h5>
-          </div>
+      <h4>La Universidad de Buenos Aires (UBA) es una universidad pública argentina con sede en la Ciudad de Buenos
+        Aires. Fue fundada el 12 de agosto de 1821 por el gobernador de la provincia de Buenos Aires, Martín Rodríguez,
+        y su ministro de gobierno, Bernardino Rivadavia. La UBA es la mayor universidad de Argentina y está considerada
+        uno de los centros de estudios más prestigiosos de América y del mundo.
+        Está conformada por trece facultades, seis establecimientos de educación secundaria,13​ ocho centros
+        universitarios regionales, el Centro Cultural Ricarcdo Rojas, la Editorial Universitaria de Buenos Aires, el
+        Cine Cosmos, dieciocho museos y cino unidades asistenciales
+        Cuenta con un total de ochenta y cinco carreras de grado y 116 títulos derivados de aquellas (que constituyen un
+        tercer nivel en la enseñanza), además de varias carreras de posgrado que son de cuarto nivel (especializaciones
+        y maestrías), de quinto nivel (doctorados) y de sexto nivel (posdoctorados)
+      </h4>
+      <div class="priv-pub">
+        <img src="/Image/Publica.png" id="priv-pub-img">
+        <h5 id="priv-pub-txt">Publica</h5>
+      </div>
+    </div>
+  </div>
+  <div class="categ-container">
+    <a href="/Universidades/Becas/becas-uba.html" class="btn-categ-a">
+      <div class="btn-categ">Becas</div>
+    </a>
+    <a href="/Universidades/Tutorías/tutorias-uba.html" class="btn-categ-a">
+      <div class="btn-categ">Tutorías</div>
+    </a>
+    <a href="/Universidades/RI/ri-uba.html" class="btn-categ-a">
+      <div class="btn-categ">Relaciones internacionales</div>
+    </a>
+    <a href="/Universidades/Deportes/deportes-uba.html" class="btn-categ-a">
+      <div class="btn-categ">Deportes</div>
+    </a>
+  </div>
+  <div class="facus-container">
+    <div class="facus-flex" id="facus-flex-izq">
+      <h1><strong>Facultades</strong></h1>
+      <h3 id="inv-facu"> Te invitamos a ver cada una de ellas, las <br>
+        cuales conforman a esta universidad junto con sus respectivas <br>
+        carreras y un mapa que señala cada facultad.
+      </h3>
+    </div>
+    <div class="facus-flex" id="facus-flex-der">
+      <h2>Mapa de facultades</h2>
+      <div id="map"></div>
+    </div>
+  </div>
+  <div class="facultades">
+    <ul>
+      <h2>Facultad de Agronomía</h2>
+      <h3>Carreras de grado y tecnicaturas</h3>
+      <li>
+        Carrera de Agronomía
+      </li>
+      <li>
+        Carrera de Economía y Administración Agrarias
+      </li>
+      <li>
+        Carrera de Gestión de Agroalimentos
+      </li>
+      <li>
+        Carrera de Planificación y Diseño del Paisaje
+      </li>
+      <li>
+        Carrera de Ciencias Ambientales
+      </li>
+      <li>
+        Profesorado en Ciencias Ambientales
+      </li>
+      <li>
+        Tecnicatura en Floricultura
+      </li>
+      <li>
+        Tecnicatura en Jardinería
+      </li>
+      <li>
+        Tecnicatura en Martillero y Corredor Público Rural
+      </li>
+      <li>
+        Tecnicatura en Produccion Vegetal Organica
+      </li>
+      <li>
+        Tecnicatura en Turismo Rural
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Arquitectura, Diseño y Urbanismo</h2>
+      <h3>Carreras de grado</h3>
+      <li>
+        Carrera de Arquitectura
+      </li>
+      <li>
+        Carrera de Diseño Gráfico
+      </li>
+      <li>
+        Carrera de Diseño Industrial
+      </li>
+      <li>
+        Carrera de Diseño de Indumentaria
+      </li>
+      <li>
+        Carrera de Diseño Textil
+      </li>
+      <li>
+        Carrera de Diseño de Imagen y Sonido
+      </li>
+      <li>
+        Carrera de Diseño y Planificación del Paisaje
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Ciencias Económicas</h2>
+      <h3>Carreras de grado</h3>
+      <li>
+        Carrera de Contador Publico
+      </li>
+      <li>
+        Carrera de Actuario
+      </li>
+      <li>
+        Licenciatura en Economía
+      </li>
+      <li>
+        Licenciatura en Administración
+      </li>
+      <li>
+        Licenciaturas en Sistemas de Información de las Organizaciones
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Ciencias Exactas y Naturales</h2>
+      <h3>Carreras de grado</h3>
+      <li>
+        Carrera de Ciencias Biológicas
+      </li>
+      <li>
+        Carrera de Ciencias de Datos
+      </li>
+      <li>
+        Carrera de Ciencias de la Atmósfera
+      </li>
+      <li>
+        Carrera de Ciencias de la Computación
+      </li>
+      <li>
+        Carrera de Ciencias Físicas
+      </li>
+      <li>
+        Carrera de Ciencias Geológicas
+      </li>
+      <li>
+        Carrera de Ciencias Matemáticas
+      </li>
+      <li>
+        Carrera de Ciencias Químicas
+      </li>
+      <li>
+        Carrera de Ciencia y Tecnología de Alimentos
+      </li>
+      <li>
+        Carrera de Oceanografía
+      </li>
+      <li>
+        Carrera de Paleontología
+      </li>
+      <h3>Profesorados</h3>
+      <li>
+        Profesorado de Ciencias de la Atmósfera
+      </li>
+      <li>
+        Profesorado de Biología
+      </li>
+      <li>
+        Profesorado de Computación
+      </li>
+      <li>
+        Profesorado de Física
+      </li>
+      <li>
+        Profesorado de Geología
+      </li>
+      <li>
+        Profesorado de Matemática
+      </li>
+      <li>
+        Profesorado de Química
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Ciencias Sociales</h2>
+      <h3>Carreras de grado</h3>
+      <li>
+        Carrera de Ciencias en la Comunicacion
+      </li>
+      <li>
+        Carrera de Ciencias Politicas
+      </li>
+      <li>
+        Carrera de Relaciones del Trabajo
+      </li>
+      <li>
+        Carrera de Sociologia
+      </li>
+      <li>
+        Carrera de Trabajo Social
+      </li>
+      <h3>Profesorados</h3>
+      <li>
+        Profesorado de Sociologia
+      </li>
+      <li>
+        Profesorado de Ciencias Politicas
+      </li>
+      <li>
+        Profesorado de Relaciones del Trabajo
+      </li>
+      <li>
+        Profesorado de Ciencias de la Comunicacion
+      </li>
+      <li>
+        Profesorado de Trabajo Social
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Ciencias Veterinarias</h2>
+      <h3>Carreras de grado</h3>
+      <li>
+        Carrera de Veterinaria
+      </li>
+      <li>
+        Tecnicatura Universitaria en Gestión Integral de Bioterios
+      </li>
+      <li>
+        Licenciatura en Gestión de Agroalimentos
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Derecho</h2>
+      <h3>Carreras de grado</h3>
+      <li>
+        Carrera de Abogacía
+      </li>
+      <li>
+        Carrera de Traductor Público
+      </li>
+      <li>
+        Carrera de Calígrafo Publico
+      </li>
+      <h3>Profesorados</h3>
+      <li>
+        Profesorado de Enseñanza Media y Superior en Ciencias Jurídicas
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Farmacia y Bioquímica</h2>
+      <h3>Carrera de grado</h3>
+      <li>
+        Carrera de Farmacia
+      </li>
+      <li>
+        Carrera de Bioquímica
+      </li>
+      <li>
+        Licenciatura en Ciencia y Tecnología de Alimentos
+      </li>
+      <li>
+        Tecnicatura universitaria en Medicina Nuclear
+      </li>
+      <li>
+        Tecnicatura Universitaria en Óptica y Contactología
+      </li>
+      <li>
+        Tecnicatura Universitaria en Gestión Integral de Bioterio
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Filosofía y Letras</h2>
+      <h3>Carreras de grado</h3>
+      <li>
+        Carrera de Bibliotecología y Ciencia de la Información
+      </li>
+      <li>
+        Carrera de Edición
+      </li>
+      <li>
+        Licenciatura en Artes
+      </li>
+      <li>
+        Licenciatura en Ciencias Antropológicas
+      </li>
+      <li>
+        Licenciatura en Filosofía
+      </li>
+      <li>
+        Licenciatura en Geografía
+      </li>
+      <li>
+        Licenciatura en Historia
+      </li>
+      <li>
+        Licenciatura en Letras
+      </li>
+      <li>
+        Licenciatura en Ciencias de la Educación
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Ingeniería</h2>
+      <h3>Carrera de grado</h3>
+      <li>
+        Carrera de Ingeniería Civil
+      </li>
+      <li>
+        Carrera de Ingeniería de Alimentos
+      </li>
+      <li>
+        Carrera de Ingenieria Electricista
+      </li>
+      <li>
+        Carrera de Ingeniería Electrónica
+      </li>
+      <li>
+        Carrera de Ingeniería en Agrimensura
+      </li>
+      <li>
+        Carrera de Ingenieria en Informatica
+      </li>
+      <li>
+        Carrera de Ingenieria en Petroleo
+      </li>
+      <li>
+        Carrera de Ingeniería Industrial
+      </li>
+      <li>
+        Carrera de Ingeniería Mecánica
+      </li>
+      <li>
+        Carrera de Ingeniería Naval y Mecánica
+      </li>
+      <li>
+        Carrera de Ingeniería Química
+      </li>
+    </ul>
+    <ul>
+      <h2>Facultad de Medicina</h2>
+      <h3>Carreras de grado y tecnicaturas</h3>
+      <li>
+        Carrera de Medicina
+      </li>
+      <li>
+        Licenciatura en Enfermería
+      </li>
+      <li>
+        Licenciatura en Fonoaudiología
+      </li>
+      <li>
+        Licenciatura en Kinesiologia y Fisiatria
+      </li>
+      <li>
+        Licenciatura en Nutrición
+      </li>
+      <li>
+        Licenciatura en Obstetricia
+      </li>
+      <li>
+        Licenciatura en Produccion de Bioimagenes
+      </li>
+      <li>
+        Tecnicatura Universitaria en Anestesia
+      </li>
+      <li>
+        Tecnicatura Universitaria en Cosmetología Facial y Corporal
+      </li>
+      <li>
+        Tecnicatura Universitaria en Hemoterapia e Inmunohematología
+      </li>
+      <li>
+        Tecnicatura Universitaria en Instrumentación Quirúrgica
+      </li>
+    </ul>
+  </div>
+
+
+  <!--  -------Footer--------- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-links">
+          <h3>Creadores</h3>
+          <ul>
+            <li><a href="/Footer/nosotros.html">Nosotros</a></li>
+            <li><a href="#">Nuestras redes</a></li>
+          </ul>
         </div>
-    </div>
-    <div class="categ-container">
-      <a href="/Universidades/Becas/becas-uba.html" class="btn-categ-a"><div class="btn-categ">Becas</div></a>
-      <a href="/Universidades/Tutorías/tutorias-uba.html" class="btn-categ-a"><div class="btn-categ">Tutorías</div></a>
-      <a href="/Universidades/RI/ri-uba.html" class="btn-categ-a"><div class="btn-categ">Relaciones internacionales</div></a>
-      <a href="/Universidades/Deportes/deportes-uba.html" class="btn-categ-a"><div class="btn-categ">Deportes</div></a>
-    </div>
-    <div class="facus-container">
-      <div class="facus-flex" id="facus-flex-izq">
-        <h1><strong>Facultades</strong></h1>
-        <h3 id="inv-facu">  Te invitamos a ver cada una de ellas, las <br>
-           cuales conforman a esta universidad junto con sus respectivas <br>
-            carreras y un mapa que señala  cada facultad.
-        </h3>
+        <div class="footer-links">
+          <h3>Contactanos</h3>
+          <ul>
+            <li><a href="/Footer/contacto.html">Contacto</a></li>
+            <li><a href="/Footer/promociona.html">Promociona tu Universidad</a></li>
+            <li><a href="/Footer/sugerencias.html">Enviá sugerencias</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Nuestras redes</h3>
+          <span class="redes-logos"><a href="https://twitter.com/Uni_Finder_?t=ii4brxzs_pgnH5b4bmk1ug&s=08" ,
+              target="_blank"><i class="fa-brands fa-twitter"></i></a></span>
+          <span class="redes-logos"><a
+              href="https://instagram.com/uni_finder_?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" , target="_blank"><i
+                class="fa-brands fa-instagram"></i></a></span>
+          <span class="redes-logos"><a href="#" , target="_blank"><i class="fa-brands fa-facebook"></i></a></span>
+        </div>
+        <div class="footer-links">
+          <h3>Derechos</h3>
+          <span id="copy">Copyright © Todos los derechos reservados / UniFinder</span>
+        </div>
       </div>
-      <div class="facus-flex" id="facus-flex-der">
-        <h2>Mapa de facultades</h2>
-        <div id="map"></div>
-      </div>
     </div>
+  </footer>
 
 
-
-    <script src="/JS/bootstrap.js"></script>
-    <script src="/JS/datos-maps/data-uba-facu.js"></script>
-    <script src="/JS/datos-maps/map-uba-facu.js"></script>
-    <script src="https://kit.fontawesome.com/6542a09f67.js" crossorigin="anonymous"></script>
-    <script async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpk5ZDe3QncRM0d1j_yYUUBuxWqhQqBio&callback=initMap">
-      </script>
+  <script src="/JS/bootstrap.js"></script>
+  <script src="/JS/datos-maps/data-uba-facu.js"></script>
+  <script src="/JS/datos-maps/map-uba-facu.js"></script>
+  <script src="https://kit.fontawesome.com/6542a09f67.js" crossorigin="anonymous"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpk5ZDe3QncRM0d1j_yYUUBuxWqhQqBio&callback=initMap">
+    </script>
 </body>
+
 </html>

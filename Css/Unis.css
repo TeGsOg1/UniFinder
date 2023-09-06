@@ -170,7 +170,32 @@
     background-color: transparent;
 }
 
+.facultades {
+    width: 100%;
 
+}
+
+.facultades ul {
+
+}
+
+.facultades ul h2 {
+    text-decoration: underline rgb(22, 47, 186);
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.facultades ul h3 {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline pink;
+}
+
+.facultades ul li {
+    margin-left: 90px;
+    font-size: 1.2rem;
+}
 
 
 /* .collapse {

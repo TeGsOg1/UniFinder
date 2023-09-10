@@ -24,6 +24,17 @@ body {
     font-family: Segoe UI Variable, 'Montserrat', sans-serif !important;
 }
 
+body::-webkit-scrollbar {
+    width: 13px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(rgb(0, 76, 255), rgb(0, 187, 255));
+}
+
 
 /* Barra de navegacion
 ------------------------- */
@@ -228,3 +239,5 @@ nav a {
 
     }
 }
+
+/* Color principal (40, 42, 188) */

@@ -5,21 +5,35 @@ body{
 
 .titulo {
     width: 100%;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    height: 300px;
 }
 
 .titulo h1 {
+    margin-left: 70px;
+    margin-top: 200px;
     text-decoration: underline;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .text{
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-size: 1.3rem;
+    
 }
 
 .text h3 {
     text-align: center;
 }
+
+/* @keyframes Titulo {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */

@@ -171,12 +171,17 @@
 }
 
 .facultades {
-    width: 100%;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.facultades ul {
-
+.facus-col {
+    background-color: rgb(230, 230, 230);
+    width: 500px;
+    margin: 10px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.395);
 }
 
 .facultades ul h2 {
@@ -198,32 +203,6 @@
 }
 
 
-/* .collapse {
-    width: 500px !important;
-}
-
-.fotofacu{
-    width: 550px;
-    height: 300px;
-    margin-top: 2%;
-}
-
-.btn-primary{
-    background-color: rgba(240, 248, 255, 0);
-    color: black;
-}
-
-.card-body{
-    background-color: rgba(250, 235, 215, 0);
-    width: 400px;
-    text-align: center;
-    margin-left: 470px;
-}
-
-p{
-    text-align: center;
-} */
-/* Responsive */
 
 @media screen and (max-width:1703px) {
     #facus-flex-izq {

@@ -173,9 +173,11 @@
 .facultades {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .facus-col {
+    display: flex;
     background-color: rgb(230, 230, 230);
     width: 500px;
     margin: 10px;
@@ -197,12 +199,17 @@
     text-decoration: underline pink;
 }
 
-.facultades ul li {
+.facultades .facus-col ul li {
+    word-wrap: break-all;
     margin-left: 90px;
     font-size: 1.2rem;
 }
 
-
+.record {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
 
 @media screen and (max-width:1703px) {
     #facus-flex-izq {

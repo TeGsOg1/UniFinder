@@ -184,6 +184,7 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.395);
+    word-break: break-all;
 }
 
 .facultades ul h2 {
@@ -199,6 +200,11 @@
     text-decoration: underline pink;
 }
 
+#email-uni {
+    text-wrap: wrap;
+    text-decoration: underline;
+}
+
 .facultades .facus-col ul li {
     word-wrap: break-all;
     margin-left: 90px;
@@ -209,6 +215,19 @@
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10px;
+}
+
+#map {
+    width: 90%;
+    height: 450px;
+}
+
+#mail-icon {
+    scale: .5;
+}
+
+span {
+    word-wrap: break-word;
 }
 
 @media screen and (max-width:1703px) {

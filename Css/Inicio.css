@@ -93,12 +93,29 @@
 
 }
 
-@media screen and (max-width:520px) {
-    .uf-presentacion h1 {
-        padding-top: 50px;
+@media screen and (max-width:620px) {
+    .uf-presentacion span {
+        font-size: 5rem;
+    }
+
+    .uf-presentacion {
+        height: 500px;
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:385px) {
+    .uf-presentacion {
+        height: 500px;
+    }
 
+    .uf-presentacion span {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:363px) {
+    .Logo-uni {
+        padding-right:0px;
+        margin-top: 10px;
+    }
 }

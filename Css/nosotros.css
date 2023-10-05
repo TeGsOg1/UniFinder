@@ -1,3 +1,26 @@
+:root {
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low:
+      1px 0.9px 1.5px hsl(var(--shadow-color) / 0.14),
+      1.7px 1.7px 2.7px -1.2px hsl(var(--shadow-color) / 0.14),
+      4.5px 4.4px 7.1px -2.5px hsl(var(--shadow-color) / 0.14);
+    --shadow-elevation-medium:
+      1px 0.9px 1.5px hsl(var(--shadow-color) / 0.15),
+      3.6px 3.5px 5.6px -0.8px hsl(var(--shadow-color) / 0.15),
+      9.2px 9px 14.5px -1.7px hsl(var(--shadow-color) / 0.15),
+      22.7px 22.2px 35.7px -2.5px hsl(var(--shadow-color) / 0.15);
+    --shadow-elevation-high:
+      1px 0.9px 1.5px hsl(var(--shadow-color) / 0.14),
+      7.3px 7.2px 11.5px -0.4px hsl(var(--shadow-color) / 0.14),
+      13.9px 13.7px 22px -0.7px hsl(var(--shadow-color) / 0.14),
+      23.1px 22.7px 36.4px -1.1px hsl(var(--shadow-color) / 0.14),
+      37.2px 36.4px 58.6px -1.4px hsl(var(--shadow-color) / 0.14),
+      58.3px 57.1px 91.8px -1.8px hsl(var(--shadow-color) / 0.14),
+      88.8px 87.1px 139.9px -2.1px hsl(var(--shadow-color) / 0.14),
+      131px 128.4px 206.4px -2.5px hsl(var(--shadow-color) / 0.14);
+  }
+
+
 .container-pres {
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +111,12 @@
 }
 
 .form-container {
-    background-color: rgb(237, 220, 191);
+    background: #B2FEFA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +130,7 @@
 }
 
 .cont-text {
+    color: rgb(0, 0, 0);
     margin-top: 30px;
     font-size: 2.5rem;
     margin-left: 5px;
@@ -119,14 +148,17 @@ form h2 {
 }
 
 form {
-    background: linear-gradient(to right, rgb(0, 238, 255), rgb(4, 190, 242), rgb(9, 183, 231));
+    background: transparent;
+
+    box-shadow: var(--shadow-elevation-medium);
     margin-top: 30px;
     padding: 20px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     height: auto;
+    border: 1px solid black;
     width: 500px;
     margin-left: 10px;
-}  
+}
 
 label {
     font-size: 1.5rem;
@@ -212,8 +244,8 @@ select {
 
 @keyframes title-appear {
     from {
-        transform: translateX(-50%) ;
-        opacity: 0;    
+        transform: translateX(-50%);
+        opacity: 0;
     }
 
     to {

@@ -1,5 +1,14 @@
 :root {
     --color-principal-:rgb(40, 42, 188);
+    --shadow-elevation-high:
+    0.2px 0.2px 0.3px hsl(var(--shadow-color) / 0.34),
+    1.3px 1.1px 1.9px -0.4px hsl(var(--shadow-color) / 0.34),
+    2.4px 2px 3.5px -0.7px hsl(var(--shadow-color) / 0.34),
+    4px 3.4px 5.9px -1.1px hsl(var(--shadow-color) / 0.34),
+    6.4px 5.4px 9.4px -1.4px hsl(var(--shadow-color) / 0.34),
+    9.9px 8.4px 14.6px -1.8px hsl(var(--shadow-color) / 0.34),
+    15.1px 12.7px 22.2px -2.1px hsl(var(--shadow-color) / 0.34),
+    22.3px 18.8px 32.8px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 
 * {

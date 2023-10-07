@@ -16,7 +16,10 @@
     font-size: 8rem;
     letter-spacing: -3px;
     margin-bottom: 100px;
-    color: black;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: .1px rgb(1, 30, 117); /* para Chrome y Safari */
+    text-stroke: 1px rgb(1, 30, 117); /* para el resto de navegadores */
+    border-bottom:  6px solid rgb(1, 30, 117);
 }
 
 .uf-presentacion h6 {
@@ -78,6 +81,16 @@
     cursor: pointer;
     background-color: rgb(0, 115, 255);
 }
+
+.test-voc {
+    text-align: center;
+}
+
+.test-voc a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 @media screen and (max-width:720px) {
     .card-text, .card-titile {

@@ -1,0 +1,150 @@
+:root {
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low:
+      1px 0.9px 1.5px hsl(var(--shadow-color) / 0.14),
+      1.7px 1.7px 2.7px -1.2px hsl(var(--shadow-color) / 0.14),
+      4.5px 4.4px 7.1px -2.5px hsl(var(--shadow-color) / 0.14);
+    --shadow-elevation-medium:
+      1px 0.9px 1.5px hsl(var(--shadow-color) / 0.15),
+      3.6px 3.5px 5.6px -0.8px hsl(var(--shadow-color) / 0.15),
+      9.2px 9px 14.5px -1.7px hsl(var(--shadow-color) / 0.15),
+      22.7px 22.2px 35.7px -2.5px hsl(var(--shadow-color) / 0.15);
+    --shadow-elevation-high:
+      1px 0.9px 1.5px hsl(var(--shadow-color) / 0.14),
+      7.3px 7.2px 11.5px -0.4px hsl(var(--shadow-color) / 0.14),
+      13.9px 13.7px 22px -0.7px hsl(var(--shadow-color) / 0.14),
+      23.1px 22.7px 36.4px -1.1px hsl(var(--shadow-color) / 0.14),
+      37.2px 36.4px 58.6px -1.4px hsl(var(--shadow-color) / 0.14),
+      58.3px 57.1px 91.8px -1.8px hsl(var(--shadow-color) / 0.14),
+      88.8px 87.1px 139.9px -2.1px hsl(var(--shadow-color) / 0.14),
+      131px 128.4px 206.4px -2.5px hsl(var(--shadow-color) / 0.14);
+  }
+
+body {
+    background: #B2FEFA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+#container-title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    width: 1000px;
+    height: 400px;
+    border-radius: 50px;
+   box-shadow: var(--shadow-elevation-medium);
+}
+
+#container-title h1 {
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+#container-title h2 {
+    
+
+}
+
+#container-title a {
+    
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: rgb(56, 56, 220);
+    transition: .2s all;
+}
+
+#container-title a:hover {
+    background-color: rgb(42, 42, 168);
+    transform: translateY(-10xpx);
+}
+
+
+@media screen and (max-width:720px){
+    #container-title {
+        width: 540px;
+        margin-top: 100px;
+        height: 300px;
+    }
+    #container-title h1 {
+        font-size: 2rem;
+    }
+    #container-title h2 {
+        font-size: 1.5rem;
+    }
+
+    #container-title a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:580px) {
+    #container-title {
+        width: 400px;
+    }
+
+    #container-title h1 {
+        font-size: 1.7rem;
+    }
+
+    #container-title h2 {
+        font-size: 1.3rem;
+    }
+
+    #container-title a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:410px) {
+    #container-title {
+        width: 340px;
+        height: 350px;
+    }
+
+    #container-title h1 {
+        font-size: 1.7rem;
+    }
+
+    #container-title h2 {
+        font-size: 1.3rem;
+    }
+
+    #container-title a {
+        font-size: .86rem;
+        margin-top: 20px;
+        ;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #container-title {
+        width: 290px;
+        height: 350px;
+    }
+
+    #container-title h1 {
+        font-size: 1.7rem;
+    }
+
+    #container-title h2 {
+        font-size: 1.3rem;
+    }
+
+    #container-title a {
+        font-size: .8rem;
+        margin: 5px;
+    }
+}
+

@@ -106,6 +106,12 @@
         width: 400px;
     }
 
+    .uf-presentacion span {
+        color: rgb(38, 73, 245);
+        border-bottom: 0px;
+        -webkit-text-stroke: rgb(6, 187, 237); /* para Chrome y Safari */
+    text-stroke: rgb(6, 187, 237);
+    }
 }
 
 @media screen and (max-width:620px) {

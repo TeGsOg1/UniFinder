@@ -79,7 +79,8 @@ nav a {
     border-radius: 30px;
     padding: 0.5rem 1rem;
     border: none;
-    color: aliceblue
+    color: aliceblue;
+    transition: .2s all ease;
 }
 
 .uf-class {
@@ -241,6 +242,10 @@ nav a {
         display: block;
         padding-bottom: 20px;
         font-size: 20px;
+    }
+
+    nav ul li a:active {
+        background-color: rgb(48, 48, 219);
     }
 
     #check:checked~ul {

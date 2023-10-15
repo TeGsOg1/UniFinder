@@ -35,6 +35,11 @@
     text-align: center;
 }
 
+#h1-second {
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* @keyframes Titulo {
     from {
         transform: translateY(-20px);
